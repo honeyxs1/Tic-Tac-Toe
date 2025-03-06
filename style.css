@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+h1 {
+    color: #333;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.player-selection {
+    margin-bottom: 20px;
+}
+
+.player-selection button {
+    padding: 8px 15px;
+    margin: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.player-selection button.selected {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+.cell.x {
+    color: #FF5722;
+}
+
+.cell.o {
+    color: #2196F3;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.score {
+    text-align: center;
+}
+
+.score h3 {
+    margin: 0 0 10px 0;
+    color: #555;
+}
+
+.score p {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.player-x-score {
+    color: #FF5722;
+}
+
+.player-o-score {
+    color: #2196F3;
+}
+
+.status {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    height: 25px;
+}
+
+.reset-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.reset-btn:hover {
+    background-color: #45a049;
+}
